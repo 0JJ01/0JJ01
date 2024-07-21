@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width,initial-scale-1">
+    <title>Portal de notícias</title>
+</head>
+<body>
+<h1>Formulário de Inclusão de Livros</h1>
+
+
+     <form action="/livros/salvar" method="post">
+        <label>Título</label>
+
+
+        <input type="text" id="'titulo" name="titulo" placeholder="Título do Livro" value="<%= livro.titulo%>"/>
+        <br>
+
+
+        <label>Livros</label>
+        <textarea id="livro" name="livro" rows="5" cols="50">Adicione aqui o resumo do Livro</textarea>
+
+     </br>
+
+        <label> Autor Livro</label>
+        <input type="text" id="autor" name="autor" value="<%= livro.autor%>"
+         placeholder ='Autor do Livro'>
+
+
+        <br/>
+        <input type="submit" value="Enviar"/>
+     </form>
+</body>
+</html>

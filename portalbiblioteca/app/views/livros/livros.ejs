@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width,initial-scale-1">
+	<title>Noticias</title>
+</head>
+<body>
+<h1>Livros</h1>
+<p>Os livros do momento!</p>
+
+<table> 
+	//table de que ira mostrar no servidor
+   
+		<tr>ID </tr>
+		<tr>Titulo</tr>
+
+ 		<% for(var i=0; i <livros.length; i++){%> //
+    <tr>
+
+		<td> <%=livros[i].id_livro %></td> //[i] insere o livro com o id
+		<td> <%=livros[i].livro%></td>
+		
+		
+	</tr>
+	<%}%>
+</table>
+</body>
+</html>
